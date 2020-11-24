@@ -1,0 +1,24 @@
+{
+  "name": "owasp_a9",
+  "version": "1.0.0",
+  "description": "SSE OWASP Gruppe A9 Online Shop",
+  "main": "index.js",
+  "dependencies": {},
+  "private": true,
+  "devDependencies": {
+    "eslint": "^7.14.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cappi999/OWASP_A9.git"
+  },
+  "author": "",
+  "license": "None",
+  "bugs": {
+    "url": "https://github.com/cappi999/OWASP_A9/issues"
+  },
+  "homepage": "https://github.com/cappi999/OWASP_A9#readme"
+}
