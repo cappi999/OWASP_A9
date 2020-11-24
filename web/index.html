@@ -21,6 +21,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- //Custom Theme files -->  
 <!-- js --> 
 	<script src="js/jquery-2.2.3.min.js"></script>
+	<script src="js/login_manager.js"></script>
 <!-- web-fonts -->
 <link href="//fonts.googleapis.com/css?family=Secular+One" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
@@ -87,12 +88,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 
 
-		<div>
-			<form action="/action_page.php">
+		<div id="loginFormDiv">
+			<form action="" id="loginForm">
 				<label for="bID">Benutzer-ID</label> <input type="text" id="bID" name="bID"><label for="pw">passwort:</label>
-				<input type="text" id="pw" name="pw">
-				<input type="submit" value="Submit" class="btn btn-primary">
-
+				<input type="password" id="pw" name="pw">
+				<input type="button" value="Submit" class="btn btn-primary" id="submitButton">
 			</form>
 
 
