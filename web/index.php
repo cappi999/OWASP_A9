@@ -5,6 +5,7 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -86,16 +87,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</nav>    
 		</div>
 
-
-		<div>
-			<form action="/action_page.php">
-				<label for="bID">Benutzer-ID</label> <input type="text" id="bID" name="bID"><label for="pw">passwort:</label>
-				<input type="text" id="pw" name="pw">
-				<input type="submit" value="Submit" class="btn btn-primary">
-
-			</form>
-
+		<div id='login_status_bar'>
+			<?php
+				if ($_SESSION['loggedIn']) {
+					include_once('./templates/logout_menu.php');
+				} else {
+					include_once('./templates/login_menu.php');
+				}
+			?>
 		</div>
+
 		<!-- banner-text -->
 		<!-- banner -->
 		<div class="container">
